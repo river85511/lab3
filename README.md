@@ -1,21 +1,33 @@
 # lab3
+This is README.
 
-sort() is much faster than insertion_sort() when it comes to a big amount of data!
+How to compile:
+	make
+sort() will choose the fastest way to sort
+sort() sorting time is ONLogN, insertion sort is N^2
+in case 1000000, 1000000log1000000 is 6000000, but 100000^2 is 1e+12
+so insertion sort need more time than sort()
 
-const int size = 1000
-sort(): 0.000209 seconds
+Case 1000000:
+sort(): 0.313 seconds
 v1/v2 are different.
-insertion_sort(): 0.010678 seconds
+insertion_sort(): 5476.34 seconds
 v1/v2 are the same.
 
-const int size = 10000
-sort(): 0.002006 seconds
+Case 100000:
+sort(): 0.031 seconds
 v1/v2 are different.
-insertion_sort(): 0.772907 seconds
+insertion_sort(): 68.594 seconds
 v1/v2 are the same.
 
-const int size = 100000
-sort(): 0.026112 seconds
+Case 10000:
+sort(): 0 seconds
 v1/v2 are different.
-insertion_sort(): 89.4087 seconds
+insertion_sort(): 0.703 seconds
+v1/v2 are the same.
+
+Case 1000:
+sort(): 0 seconds
+v1/v2 are different.
+insertion_sort(): 0.015 seconds
 v1/v2 are the same.
